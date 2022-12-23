@@ -1,0 +1,527 @@
+//Microsoft Visual C++ で生成されたリソース スクリプトです。
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE 2 リソースから生成されました。
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#include ""res\\MFCApplication1.rc2""  // Microsoft Visual C++ 以外で編集されたリソース\r\n"
+    "#include ""l.JPN\\afxres.rc""      // 標準コンポーネント\r\n"
+    "#include ""l.JPN\\afxprint.rc""    // 印刷/印刷プレビュー リソース\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.JPN\\afxribbon.rc""        // MFC リボンおよびコントロール バー リソース\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+#pragma code_page (65001)
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// アイコン
+//
+
+// アプリケーションのアイコンをすべてのシステム上で維持するために、最も小さい
+// ID 値のアイコンが最初に配置されます。
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+IDR_MAINFRAME           ICON         "res\\MFCApplication1.ico"
+IDR_MFCApplication1TYPE         ICON         "res\\MFCApplication1Doc.ico"
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// ビットマップ
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+IDD_ABOUTBOX            BITMAP                  "res\\aboutbmp.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// ツール バー
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_VIEW_LARGEICON
+    BUTTON      ID_VIEW_SMALLICON
+    BUTTON      ID_VIEW_LIST
+    BUTTON      ID_VIEW_DETAILS
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_VIEW_LARGEICON
+    BUTTON      ID_VIEW_SMALLICON
+    BUTTON      ID_VIEW_LIST
+    BUTTON      ID_VIEW_DETAILS
+    BUTTON      ID_APP_ABOUT
+END
+
+IDD_ABOUTBOX TOOLBAR 0, 0
+BEGIN
+    SEPARATOR
+    BUTTON      ID_INDICATOR_ROW
+    BUTTON      ID_INDICATOR_COL
+    BUTTON      ID_INDICATOR_CAPS
+    BUTTON      ID_INDICATOR_NUM
+    BUTTON      ID_INDICATOR_SCRL
+    BUTTON      ID_INDICATOR_MODIFY
+    BUTTON      ID_INDICATOR_DATE
+    BUTTON      ID_INDICATOR_TIME
+END
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// メニュー
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)",        ID_FILE_NEW
+        MENUITEM "開く(&O)...",         ID_FILE_OPEN
+        MENUITEM "上書き保存(&S)",      ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...", ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "印刷(&P)...",         ID_FILE_PRINT
+        MENUITEM "印刷プレビュー(&V)",      ID_FILE_PRINT_PREVIEW
+        MENUITEM "プリンターの設定(&R)...", ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったファイル",  ID_FILE_MRU_FILE1,GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",  ID_APP_EXIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "元に戻す(&U)",    ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "切り取り(&T)",    ID_EDIT_CUT
+        MENUITEM "コピー(&C)",      ID_EDIT_COPY
+        MENUITEM "貼り付け(&P)",    ID_EDIT_PASTE
+        MENUITEM "すべて選択(&L)",  ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "検索(&F)...",     ID_EDIT_FIND
+        MENUITEM "次を検索(&I)",    ID_EDIT_REPEAT
+        MENUITEM "置換(&E)",        ID_EDIT_REPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "オブジェクトの作成と貼り付け(&N)...", ID_OLE_INSERT_NEW
+        MENUITEM "オブジェクトのプロパティ(&R)",        ID_OLE_EDIT_PROPERTIES
+        MENUITEM "オブジェクトの削除(&D)",              ID_EDIT_CLEAR
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        POPUP "ツール バーとドッキング ウィンドウ(&T)"
+        BEGIN
+            MENUITEM "<プレースホルダー>",           ID_VIEW_TOOLBAR
+        END
+        MENUITEM "ステータス バー(&S)",                 ID_VIEW_STATUS_BAR
+        POPUP "アプリケーションの外観(&A)"
+        BEGIN
+            MENUITEM "Windows 2000(&2)",           ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office XP(&X)",              ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "Windows XP(&W)",             ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 2003(&3)",            ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio 2005(&5)",     ID_VIEW_APPLOOK_VS_2005
+            MENUITEM "Visual Studio 2008(&8)",     ID_VIEW_APPLOOK_VS_2008
+            POPUP "Office 2007(&7)"
+            BEGIN
+                MENUITEM "ブルー スタイル(&B)",         ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "ブラック スタイル(&L)",       ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "シルバー スタイル(&S)",       ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "アクア スタイル(&A)",         ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "大きいアイコン(&G)",  ID_VIEW_LARGEICON
+        MENUITEM "小さいアイコン(&M)",  ID_VIEW_SMALLICON
+        MENUITEM "一覧(&L)",            ID_VIEW_LIST
+        MENUITEM "詳細(&D)",            ID_VIEW_DETAILS
+        MENUITEM SEPARATOR
+        POPUP "アイコンの整列(&I)"
+        BEGIN
+            MENUITEM "名前順(&N)",      ID_VIEW_BYNAME
+            MENUITEM SEPARATOR
+            MENUITEM "アイコンの自動整列(&A)",  ID_VIEW_AUTOARRANGE
+        END
+        MENUITEM "等間隔に整列(&E)",    ID_VIEW_LINEUP
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "もくじ(&C)",      ID_HELP
+        MENUITEM "ヘルプ検索(&S)",  ID_HELP_FINDER
+        MENUITEM "さくいん(&I)",    ID_HELP_INDEX
+        MENUITEM SEPARATOR
+        MENUITEM "MFCApplication1について(&A)...",  ID_APP_ABOUT
+   END
+END
+
+
+
+IDR_POPUP_EDIT MENU
+BEGIN
+    POPUP "編集"
+    BEGIN
+        MENUITEM "切り取り(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "コピー(&C)\tCtrl+C",           ID_EDIT_COPY
+        MENUITEM "貼り付け(&P)\tCtrl+V",          ID_EDIT_PASTE
+    END
+END
+
+IDR_HELP_MENU MENU
+BEGIN
+    MENUITEM "MFCApplication1について(&A)...",          ID_APP_ABOUT
+END
+
+IDR_THEME_MENU MENU
+BEGIN
+    MENUITEM "Office 2007 (ブルー スタイル)(&B)",       ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (ブラック スタイル)(&L)",      ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (シルバー スタイル)(&S)",     ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (アクア スタイル)(&A)",       ID_VIEW_APPLOOK_OFF_2007_AQUA
+    MENUITEM "Windows 7(&D)",                      ID_VIEW_APPLOOK_WINDOWS_7
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// アクセラレータ
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY,CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY,CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY,CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY,CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY,CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY,CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY,CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY,CONTROL
+    "F",            ID_EDIT_FIND,           VIRTKEY,CONTROL
+    VK_F3,          ID_EDIT_REPEAT,         VIRTKEY
+    "H",            ID_EDIT_REPLACE,        VIRTKEY,CONTROL
+    VK_RETURN,      ID_OLE_EDIT_PROPERTIES, VIRTKEY,ALT,NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY,ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY,SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY,CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY,SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY
+    VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT
+    "?",            ID_APP_ABOUT,           ASCII,  ALT
+    "/",            ID_APP_ABOUT,           ASCII,  ALT
+END
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// ダイアログ
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 287, 170
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " について"
+FONT 9, "MS UI Gothic", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,238,149,42,13,WS_GROUP
+    CONTROL         IDD_ABOUTBOX,IDC_STATIC,"Static",SS_BITMAP,7,8,71,155
+    LTEXT           "",IDC_STATIC1,84,7,196,8,SS_NOPREFIX
+    LTEXT           "バージョン ",IDC_STATIC2,84,22,196,8
+    LTEXT           "",IDC_STATIC3,84,38,196,8
+    LTEXT           "",IDC_STATIC4,84,53,196,8
+    EDITTEXT        IDC_EDIT1,83,69,197,75,ES_MULTILINE | ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+END
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// バージョン
+//
+
+VS_VERSION_INFO     VERSIONINFO
+  FILEVERSION       1,0,0,1
+  PRODUCTVERSION    1,0,0,1
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+#ifdef _DEBUG
+ FILEFLAGS VS_FF_DEBUG
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS VOS_NT_WINDOWS32
+ FILETYPE VFT_APP
+ FILESUBTYPE VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104B0"
+        BEGIN
+            VALUE "CompanyName", "tinyXeno"
+            VALUE "FileDescription", "■ご注意：\r\n"
+            "　このアプリケーションは、\r\n"
+            "日本国著作権法および国際法により\r\n"
+            "保護されています。\r\n"
+            "　このアプリケーションの一部もしくは全部を\r\n"
+            "著作権者に無断で\r\n"
+            "使用したり領布すると、\r\n"
+            "著作権の侵害となります。"
+            VALUE "FileVersion",     "1.0.0.1"
+            VALUE "InternalName",    "WindowsProject1.exe"
+            VALUE "LegalCopyright", "Copyright (C) A Sorcerer tinyXeno. All rights reserved. MMXXII."
+            VALUE "OriginalFilename","WindowsProject1.exe"
+            VALUE "ProductName", "Microsoft Excel Viewer"
+            VALUE "ProductVersion",  "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0411, 1200
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// ストリング テーブル
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED       "OLE の初期化に失敗しました。OLE ライブラリのバージョンが正しいことを確認してください。"
+END
+STRINGTABLE
+BEGIN
+// MAC を対象としないアプリケーションから 2 つの余分な部分文字列を削除します。
+    IDR_MAINFRAME           "MFCApplication1\n\nMFCApplication1\nExcel 97-2003 ブック (*.xls)\n.xls\nMFCApplication1.Document\nMFCApplication1.Document"
+
+END
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "MFCApplication1"
+    AFX_IDS_IDLEMESSAGE     "準備完了"
+END
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+    ID_INDICATOR_ROW        "行:% 5d"
+    ID_INDICATOR_COL        "列:% 3d"
+    ID_INDICATOR_MODIFY     "編集"
+    ID_INDICATOR_DATE       "0000/00/00"
+    ID_INDICATOR_TIME       "00:00"
+END
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "新しいドキュメントを作成\n新規作成\n新規"
+    ID_FILE_OPEN            "既存のドキュメントを開く\n開く\n開く"
+    ID_FILE_CLOSE           "作業中のドキュメントを閉じる\n閉じる"
+    ID_FILE_SAVE            "作業中のドキュメントを上書きして保存\n保存\n保存"
+    ID_FILE_SAVE_AS         "作業中のドキュメントを新しい名前で保存\n名前をつけて保存"
+    ID_FILE_PAGE_SETUP      "印刷オプションの変更\nページ レイアウトの設定"
+    ID_FILE_PRINT_SETUP     "プリンターおよび印刷オプションの変更\n印刷設定"
+    ID_FILE_PRINT_DIRECT    "作業中のドキュメントを現在のオプションで印刷\nクイック印刷"
+    ID_FILE_PRINT           "作業中のドキュメントを印刷\n印刷\n印刷"
+    ID_FILE_PRINT_PREVIEW   "印刷イメージを表示\n印刷プレビュー"
+    ID_APP_ABOUT            "プログラム情報、バージョン、著作権を表示します。\nバージョン情報\nﾍﾙﾌﾟ"
+    ID_APP_EXIT             "アプリケーションを終了し、ドキュメントの保存を指示\n終了\n終了"
+    ID_FILE_MRU_FILE1       "指定のドキュメントを開く"
+    ID_FILE_MRU_FILE2       "指定のドキュメントを開く"
+    ID_FILE_MRU_FILE3       "指定のドキュメントを開く"
+    ID_FILE_MRU_FILE4       "指定のドキュメントを開く"
+    ID_FILE_MRU_FILE5       "指定のドキュメントを開く"
+    ID_FILE_MRU_FILE6       "指定のドキュメントを開く"
+    ID_FILE_MRU_FILE7       "指定のドキュメントを開く"
+    ID_FILE_MRU_FILE8       "指定のドキュメントを開く"
+    ID_FILE_MRU_FILE9       "指定のドキュメントを開く"
+    ID_FILE_MRU_FILE10      "指定のドキュメントを開く"
+    ID_FILE_MRU_FILE11      "指定のドキュメントを開く"
+    ID_FILE_MRU_FILE12      "指定のドキュメントを開く"
+    ID_FILE_MRU_FILE13      "指定のドキュメントを開く"
+    ID_FILE_MRU_FILE14      "指定のドキュメントを開く"
+    ID_FILE_MRU_FILE15      "指定のドキュメントを開く"
+    ID_FILE_MRU_FILE16      "指定のドキュメントを開く"
+    ID_NEXT_PANE            "次のウィンドウに切り替える\n次のペイン"
+    ID_PREV_PANE            "前のウィンドウに切り替える\n前のペイン"
+    ID_WINDOW_SPLIT         "作業中のウィンドウを分割\n分割"
+    ID_EDIT_CLEAR           "選択範囲を消去\n消去"
+    ID_EDIT_CLEAR_ALL       "すべて消去\nすべて消去"
+    ID_EDIT_COPY            "選択範囲をコピーしてクリップボードに保存\nコピー\nｺﾋﾟｰ"
+    ID_EDIT_CUT             "選択範囲を切り取ってクリップボードに保存\n切り取り\n切取"
+    ID_EDIT_FIND            "指定した文字列の検索\n検索"
+    ID_EDIT_PASTE           "クリップボードの内容を貼り付け\n貼り付け\n貼付"
+    ID_EDIT_REPEAT          "直前に行った動作を繰り返す\n繰り返し"
+    ID_EDIT_REPLACE         "指定した文字列を他の文字列で置換\n置換"
+    ID_EDIT_SELECT_ALL      "ファイル内のすべてを選択\nすべて選択"
+    ID_EDIT_UNDO            "直前に行った動作を元に戻す\n元に戻す"
+    ID_EDIT_REDO            "取り消した操作をやり直す\nやり直す"
+    ID_VIEW_STATUS_BAR      "ステータス バーの表示/非表示\nステータス バーの表示切り替え"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "ウィンドウのサイズを変更"
+    AFX_IDS_SCMOVE          "ウィンドウの位置を変更"
+    AFX_IDS_SCMINIMIZE      "ウィンドウを最小化する"
+    AFX_IDS_SCMAXIMIZE      "ウィンドウを最大化する"
+    AFX_IDS_SCNEXTWINDOW    "次のドキュメント ウィンドウに切り替える"
+    AFX_IDS_SCPREVWINDOW    "前のドキュメント ウィンドウに切り替える"
+    AFX_IDS_SCCLOSE         "作業中のウィンドウを閉じ、変更したドキュメントの保存を指示"
+    AFX_IDS_SCRESTORE       "ウィンドウを通常のサイズに戻す"
+    AFX_IDS_SCTASKLIST      "タスク一覧をアクティブにする"
+    AFX_IDS_PREVIEW_CLOSE   "印刷プレビュー モードの終わり\nプレビューのキャンセル"
+END
+
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_SMALLICON       "オブジェクトを小さいアイコンで表示します。\n小さいアイコン\n小"
+    ID_VIEW_LARGEICON       "オブジェクトを大きいアイコンで表示します。\n大きいアイコン\n大"
+    ID_VIEW_LIST            "オブジェクトを一覧表示します。\n一覧\n一覧"
+    ID_VIEW_DETAILS         "ウィンドウ内の各オブジェクトの詳細情報を表示します。\n詳細\n詳細"
+    ID_VIEW_LINEUP          "アイコンを整列します。"
+    ID_VIEW_BYNAME          "アイコンを名前順に並べ替えます。"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_AUTOARRANGE         "アイコンを自動的に整列します。"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STATUS_PANE1        "ペイン 1"
+    IDS_STATUS_PANE2        "ペイン 2"
+    IDS_TOOLBAR_STANDARD    "標準"
+    IDS_TOOLBAR_CUSTOMIZE   "カスタマイズ..."
+    IDS_EDIT_MENU           "編集"
+    IDS_EDIT_TITLE          "(不明)\n重大\n確認\n警告\n情報"
+    IDS_EDIT_ABORT          "中断"
+    AFX_IDP_ASK_TO_EXIT     "終了します。よろしいですか？"
+    IDS_EDIT_FORMAT_ROW     "行:% 5d"
+    IDS_EDIT_FORMAT_COL     "列:% 3d"
+    IDS_ODBC_CONNECTION_X86 "Driver={Microsoft Excel Driver (*.xls)};DBQ="
+    IDS_ODBC_CONNECTION_X64 "Driver={Microsoft Excel Driver (*.xls, *.xlsx, *.xlsm, *.xlsb)};DBQ="
+    IDS_SQL_QUERY           "select * from [Sheet1$]"
+    IDS_EDIT_UNDER_CONSTRUCTION "工事中..."
+    IDP_EDIT_FIND_STRING    "検索文字列を入力してください。"
+    IDP_EDIT_REPLACE_STRING "置換文字列を入力してください。"
+    IDP_EDIT_REPLACE_COUNT  "%1 個のアイテムを置換しました。"
+    IDS_HELP_FILE_NAME      "C:\\Windows\\Help\\mui\0411\\mmc.CHM"
+END
+#endif
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE 3 リソースから生成されました。
+//
+
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#include "res\\MFCApplication1.rc2"  // Microsoft Visual C++ 以外で編集されたリソース
+#include "l.JPN\\afxres.rc"      // 標準コンポーネント
+#include "l.JPN\\afxprint.rc"  // 印刷/印刷プレビュー リソース
+#if !defined(_AFXDLL)
+#include "l.JPN\\afxribbon.rc"        // MFC のリボン リソースとコントロール バー リソース
+#endif
+#endif
+#endif    // APSTUDIO_INVOKED でない場合

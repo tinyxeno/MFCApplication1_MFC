@@ -1,0 +1,15 @@
+﻿REGEDIT
+; この .REG ファイルは SETUP プログラムで使用される可能性があります。
+;   SETUP プログラムが使用できない場合、以下のエントリは CWinApp::RegisterShellFileTypes
+;   および COleObjectFactory::UpdateRegistryAll の呼び出しで自動的に InitInstance 中に
+;   登録されます。
+
+HKEY_CLASSES_ROOT\.csv = MFCApplication1.Document
+HKEY_CLASSES_ROOT\MFCApplication1.Document\shell\open\command = MFCApplication1.EXE %1
+HKEY_CLASSES_ROOT\MFCApplication1.Document\shell\open\ddeexec = [open("%1")]
+HKEY_CLASSES_ROOT\MFCApplication1.Document\shell\open\ddeexec\application = MFCApplication1
+    ; メモ : アプリケーションは省略可能です。
+    ;  ("command" のアプリケーション名が既定値になります。)
+
+HKEY_CLASSES_ROOT\MFCApplication1.Document = MFCApplication1.Document
+
